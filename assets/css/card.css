@@ -1,0 +1,114 @@
+.flip-box {
+  width: 190px;
+  height: 254px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.flip-box h3 {
+  margin: 0.5rem;
+  padding: 2px;
+}
+
+.flip-box span {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+}
+
+h2.pais {
+  height: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-box:hover .front {
+  transform: rotateX(180deg);
+}
+
+.flip-box:hover .back {
+  transform: rotateX(360deg);
+}
+
+.front,
+.back {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: Arial;
+}
+
+.back {
+  padding: 15px;
+}
+
+.back img {
+  transition: all 0.5s;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+}
+
+.front {
+  z-index: 2;
+  transition: all 0.6s linear;
+  background-color: #4054b2;
+}
+
+.front img {
+  object-fit: cover;
+  transition: all 0.5s;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  display: block;
+}
+
+.back {
+  transition: all 0.6s linear;
+  transform: rotateX(180deg);
+  background-color: #4054b2;
+}
+
+div.details {
+  margin-top: 10px;
+}
+
+div.details>h3 {
+  margin-bottom: 15px;
+}
+
+div.details>a {
+  border: 2px solid #ffffff;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 23px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+
+div.details>a:hover {
+  color: #4054b2;
+  background-color: #ffffff;
+}

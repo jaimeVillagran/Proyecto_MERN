@@ -5,16 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto MERN</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/card.css">
+  <link rel="stylesheet" href="./assets/css/details.css">
+  <link rel="stylesheet" href="./assets/css/loader.css" />
   <meta name="author" content="Jaime Villagran">
-  <link rel="stylesheet" href="./assets/css/base.css">
+  <title>Proyecto MERN - API Countries</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="containerLogo" id="headerTitle">
+      <img src="./assets/img/Tierra.jpg" alt="Globo Terraqueo" class="imgPrincipal">
+      <h1 class="titlePrincipal">Paises del Mundo</h1>
+    </div>
 
+    <div class="containSearch">
+      <form class="searchForm" action autocomplete="off" id="formulario">
+        <input type="text" class="searchPlace" placeholder="Ej. Chile" id="searchCountry" />
+        <button type="button" class="searchButton" id="searchBtn">
+          <img src="./assets/img/search.svg" />
+        </button>
+      </form>
 
+      <div class="searchFilter">
+        <h3 class="searchContinente">Filtrar por Continentes</h3>
+        <button type="button" class="buttonText">Africa</button>
+        <button type="button" class="buttonText">America</button>
+        <button type="button" class="buttonText">Asia</button>
+        <button type="button" class="buttonText">Europe</button>
+        <button type="button" class="buttonText">Europe</button>
+      </div>
+    </div>
+  </header>
 
-  <script src="./assets/js/index.js"></script>
+  <main id="root"> </main>
+
+  <div class="modal" id="loader"></div>
+
+  <script src="./assets/js/index.js" type="module"></script>
 </body>
 
 </html>

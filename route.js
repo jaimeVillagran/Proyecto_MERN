@@ -1,9 +1,4 @@
-import {
-	loadFilter,
-	loadHome,
-	loadSearch,
-	loadDetails,
-} from "./Proyecto_MERN/endpoints.js";
+import { loadFilter, loadHome, loadSearch, loadDetails } from "./endpoints.js";
 
 import { showLoader } from "./templates.js";
 

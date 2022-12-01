@@ -1,8 +1,8 @@
-import { Root } from "./js/bring.js";
+import { Root } from "./bring.js";
 
-import { getAll, getFilter, getSearch, getDetails } from "./js/api.js";
+import { getAll, getFilter, getSearch, getDetails } from "./api.js";
 
-import { printOnTarget, printDetails } from "./js/templates.js";
+import { printOnTarget, printDetails } from "./templates.js";
 
 export const ClearRoot = () => {
 	Root.innerHTML = "";

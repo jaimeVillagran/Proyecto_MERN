@@ -1,10 +1,10 @@
-import { onHashChangeHandler } from "../assets/js/route.js";
+import { onHashChangeHandler } from "./js/route.js";
 import {
 	continent,
 	searchCountry,
 	searchBtn,
 	headerTitle,
-} from "../assets/js/bring.js";
+} from "./js/bring.js";
 
 const onLoadFunction = () => {
 	location.hash = "_home";

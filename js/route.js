@@ -1,4 +1,4 @@
-import { loadFilter, loadHome, loadSearch, loadDetails } from "./endPoints.js";
+import { loadFilter, loadHome, loadSearch, loadDetails } from "../endpoints.js";
 
 import { showLoader } from "./templates.js";
 
